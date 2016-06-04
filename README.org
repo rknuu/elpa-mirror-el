@@ -1,0 +1,31 @@
+#+TITLE:  elpa-mirror-el
+#+AUTHOR: Rknuu
+#+LANGUAGE: en
+#+STARTUP: showall
+#+TEXT: Basic Elisp project to mirror an ELPA site locally.
+#+OPTIONS: H:3 num:nil toc:t title:t todo:t f:t \n:nil ::t |:t ^:t *:t tex:t
+
+* Create a local repository mirror using Emacs!
+Emacs is a fantastic development platform and it has a pletora of
+tools availible through the brilliant [[https://www.emacswiki.org/emacs/ELPA][ELPA]] provider.
+
+This script provides a way to mirror these resources.
+
+** Why?
+While most will not have any issues with accessing ELPA, there may be
+scenarios where you need to be behind a firewall, or you need to cache
+the packages you use to help build a more repeatible environment.
+
+** Known Limitations
+- Only the last mirrored binaries are availible for download.
+
+
+* Usage
+#+NAME: Usage
+#+BEGIN_SRC
+emacs --script=mirror.el {elpa-url} {target}
+#+END_SRC
+
+
+
+
